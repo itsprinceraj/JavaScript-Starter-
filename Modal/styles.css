@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.icon{
+    border: 3px solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 2px 2px 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facebook{
+    color: rgb(68, 125, 250);
+}
+
+#twitter{
+    color: rgb(61, 160, 241);
+}
+
+#instagram{
+    color: rgb(221, 68, 111);
+}
+
+#whatsapp{
+    color: rgb(61, 241, 142);
+}
+
+#telegram{
+    color: rgb(95, 145, 245);
+}
+
+#modal{
+    scale: 0;
+}
+
+.active{
+    scale: 1;
+}
+
+#overlay{
+    position: fixed;
+    background-color: rgba(32, 31, 31, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 3;
+    transition: all 200ms linear;
+
+}
+
+.circle-purple{
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    box-shadow: 0 0 50px #5648d8;
+    animation: circle-purple 8s linear alternate-reverse infinite;
+}
+
+.circle-red{
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    box-shadow: 0 0 50px #d84869;
+    animation: circle-red 10s linear alternate-reverse infinite;
+}
+
+@keyframes circle-red {
+    from{
+        left: 34%;
+        top: 10%;
+
+    }
+    to{
+        left: 30%;
+        top: 5%;
+
+    }
+}
+
+
+@keyframes circle-purple {
+    from{
+        right: 33%;
+        bottom: 7%;
+
+    }
+    to{
+        right: 26%;
+        bottom: 3%;
+
+    }
+}
+
+#card{
+    position: absolute;
+    background-color: #ffffff1a;;
+    /* background: #ffffff1a; */
+    border: 1px solid rgba(203, 202, 202, 0.427);
+    backdrop-filter: blur(15px);
+    
+}
+
+#photo{
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+#photo{
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+#cross{
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    font-size: 25px;
+    opacity: 0;
+    transition: all 0.2s linear;
+    /* z-index: 20; */
+    color: white;
+}

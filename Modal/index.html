@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="wrapper" class=" w-[100vw] h-[100vh] flex justify-center items-center bg-black relative"> 
+        <div class="circle-red rounded-full h-[200px] w-[200px]  absolute top-[10%] left-[34%]"></div>
+
+        <button id="cross"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="circle-purple rounded-full h-[250px] w-[250px]  absolute bottom-[7%] right-[33%] " ></div>
+
+        <div id="card" class=" w-[25%] h-[68%] flex flex-col items-center rounded-md py-5 text-white gap-3 pt-12 relative">
+
+            <img id="photo" src="image/Prince.jpg" alt="" class="w-[200px] h-[200px]">
+
+            <h2 id="name" class="text-[30px] font-bold text-gray-200" > Prince Raj</h2>
+
+            <h3 id="designation" class="text-[18px]  font-semibold text-gray-400">Full Stack Engineer</h3>
+
+            <div id="button" class="flex gap-7 mt-2 ">
+
+                <button id="share-button" class=" text-[17px] border-[2px] border-gray-200  hover:bg-gray-200 hover:text-black hover:font-semibold rounded-sm px-2 py-[1.5px] transition-all duration-200 text-gray-200 " ><i class="fa-solid fa-share pr-[1.5px] text-[14px] flex justify-center items-center" onclick="openModal()"></i> Share Profile</button>
+
+                <button class="text-[17px] border-[2px] hover:font-semibold border-gray-200  hover:bg-gray-200 hover:text-black rounded-sm px-2 py-[1.5px] transition-all duration-200  text-gray-200 flex justify-center items-center">Follow me <i class="fa-solid fa-circle-plus ml-[7px] text-[14px]"></i></button>
+    
+            </div>
+        </div>
+        <section id="modal" class=" w-[500px] h-[250px] flex flex-col gap-2 bg-black fixed px-3 rounded-md transition-all duration-300 top-[35%] z-10">
+            <div class=" flex justify-between border-b">
+                <p class=" text-[25px] font-semibold mt-1 text-white">Share My Profile</p>
+                <button id="cross-button" onclick="closeModal()"><i class="fa-solid fa-xmark text-white text-center"></i></button>
+            </div>
+
+            <div class="flex flex-col gap-7">
+                <span class=" text-[19px] font-semibold text-white">Share this Via</span>
+
+                <div class=" flex gap-5 text-[35px] justify-center">
+                    <a href="#" id="facebook" class="icon">
+                        <i class="fa-brands fa-facebook-f text-[30px]"></i>
+                    </a>
+
+                    <a href="#" id="twitter" class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#" id="instagram" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" id="whatsapp" class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    
+                    <a href="#" id="telegram" class="icon">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            
+        </section>
+
+        <div id="overlay" onclick="closeModal()"></div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/ae94d73b17.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
