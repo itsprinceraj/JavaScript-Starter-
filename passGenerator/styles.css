@@ -21,8 +21,9 @@ input[type=checkbox]{
 
 
 .main {
-
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    background: #16222A;  /* fallback for old browsers */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
 
     min-height: 100vh;
     display: flex;
@@ -39,7 +40,7 @@ input[type=checkbox]{
     min-height: 400px;
     padding: 10px;
     box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
-    background: #fbfbfb13;
+    background: #fbfbfb2c;
     border-radius: 2px;
     margin-top: 10px;
     border: 2px solid rgb(203, 183, 183);
