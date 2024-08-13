@@ -60,13 +60,13 @@
 .circle-purple{
     background: linear-gradient(-25deg, #5648d8, #8641f4);
     box-shadow: 0 0 50px #5648d8;
-    animation: circle-purple 8s linear alternate-reverse infinite;
+    animation: circle-purple 7s linear alternate-reverse infinite;
 }
 
 .circle-red{
     background: linear-gradient(-25deg, #d84869, #f46641);
     box-shadow: 0 0 50px #d84869;
-    animation: circle-red 10s linear alternate-reverse infinite;
+    animation: circle-red 3s linear alternate-reverse infinite;
 }
 
 @keyframes circle-red {
